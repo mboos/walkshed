@@ -1,0 +1,1657 @@
+[
+   {
+      "id": "LRT",
+      "type": "0",
+      "name": "Light Rail",
+      "trips": [
+         {
+            "headsign": "Conestoga Mall",
+            "stops": [
+               {
+                  "stop_id": "1046",
+                  "time_from_last": 0,
+                  "cumulative_time": 0
+               },
+               {
+                  "lon": "-80.462486",
+                  "name": "Block Line",
+                  "cumulative_time": 167,
+                  "time_from_last": 167,
+                  "lat": "43.422459"
+               },
+               {
+                  "lon": "-80.478577",
+                  "name": "Mill",
+                  "cumulative_time": 418,
+                  "time_from_last": 251,
+                  "lat": "43.434185"
+               },
+               {
+                  "lon": "-80.474686",
+                  "name": "Borden",
+                  "cumulative_time": 598,
+                  "time_from_last": 180,
+                  "lat": "43.442249"
+               },
+               {
+                  "stop_id": "2924",
+                  "time_from_last": 99,
+                  "cumulative_time": 697
+               },
+               {
+                  "stop_id": "1000",
+                  "time_from_last": 80,
+                  "cumulative_time": 777
+               },
+               {
+                  "lon": "-80.491203",
+                  "name": "Young",
+                  "cumulative_time": 861,
+                  "time_from_last": 84,
+                  "lat": "43.452045"
+               },
+               {
+                  "lon": "-80.498840",
+                  "name": "Grand Hub",
+                  "cumulative_time": 1007,
+                  "time_from_last": 146,
+                  "lat": "43.453091"
+               },
+               {
+                  "lon": "-80.511742",
+                  "name": "Grand River Hospital",
+                  "cumulative_time": 1147,
+                  "time_from_last": 140,
+                  "lat": "43.457237"
+               },
+               {
+                  "stop_id": "1904",
+                  "time_from_last": 77,
+                  "cumulative_time": 1224
+               },
+               {
+                  "lon": "-80.522842",
+                  "name": "Uptown Square",
+                  "cumulative_time": 1353,
+                  "time_from_last": 129,
+                  "lat": "43.464127"
+               },
+               {
+                  "lon": "-80.534569",
+                  "name": "Seagram",
+                  "cumulative_time": 1458,
+                  "time_from_last": 105,
+                  "lat": "43.468906"
+               },
+               {
+                  "stop_id": "3699",
+                  "time_from_last": 88,
+                  "cumulative_time": 1546
+               },
+               {
+                  "lon": "-80.545296",
+                  "name": "R&T Park",
+                  "cumulative_time": 1672,
+                  "time_from_last": 126,
+                  "lat": "43.481403"
+               },
+               {
+                  "lon": "-80.543587",
+                  "name": "Northfield",
+                  "cumulative_time": 1837,
+                  "time_from_last": 165,
+                  "lat": "43.497746"
+               },
+               {
+                  "stop_id": "3798",
+                  "time_from_last": 246,
+                  "cumulative_time": 2083
+               }
+            ]
+         },
+         {
+            "headsign": "Fairview Park Mall",
+            "stops": [
+               {
+                  "stop_id": "3798",
+                  "time_from_last": 0,
+                  "cumulative_time": 0
+               },
+               {
+                  "lon": "-80.543587",
+                  "name": "Northfield",
+                  "cumulative_time": 246,
+                  "time_from_last": 246,
+                  "lat": "43.497746"
+               },
+               {
+                  "lon": "-80.545296",
+                  "name": "R&T Park",
+                  "cumulative_time": 411,
+                  "time_from_last": 165,
+                  "lat": "43.481403"
+               },
+               {
+                  "stop_id": "3699",
+                  "time_from_last": 126,
+                  "cumulative_time": 537
+               },
+               {
+                  "lon": "-80.534569",
+                  "name": "Seagram",
+                  "cumulative_time": 625,
+                  "time_from_last": 88,
+                  "lat": "43.468906"
+               },
+               {
+                  "lon": "-80.523758",
+                  "name": "Uptown (Caroline)",
+                  "cumulative_time": 730,
+                  "time_from_last": 105,
+                  "lat": "43.462589"
+               },
+               {
+                  "stop_id": "1904",
+                  "time_from_last": 129,
+                  "cumulative_time": 859
+               },
+               {
+                  "lon": "-80.511742",
+                  "name": "Grand River Hospital",
+                  "cumulative_time": 936,
+                  "time_from_last": 77,
+                  "lat": "43.457237"
+               },
+               {
+                  "lon": "-80.498840",
+                  "name": "Grand Hub",
+                  "cumulative_time": 1076,
+                  "time_from_last": 140,
+                  "lat": "43.453091"
+               },
+               {
+                  "lon": "-80.493332",
+                  "name": "Gaukel",
+                  "cumulative_time": 1222,
+                  "time_from_last": 146,
+                  "lat": "43.450146"
+               },
+               {
+                  "stop_id": "2922",
+                  "time_from_last": 84,
+                  "cumulative_time": 1306
+               },
+               {
+                  "stop_id": "2920",
+                  "time_from_last": 80,
+                  "cumulative_time": 1386
+               },
+               {
+                  "lon": "-80.474686",
+                  "name": "Borden",
+                  "cumulative_time": 1485,
+                  "time_from_last": 99,
+                  "lat": "43.442249"
+               },
+               {
+                  "lon": "-80.478577",
+                  "name": "Mill",
+                  "cumulative_time": 1665,
+                  "time_from_last": 180,
+                  "lat": "43.434185"
+               },
+               {
+                  "lon": "-80.462486",
+                  "name": "Block Line",
+                  "cumulative_time": 1916,
+                  "time_from_last": 251,
+                  "lat": "43.422459"
+               },
+               {
+                  "stop_id": "1046",
+                  "time_from_last": 167,
+                  "cumulative_time": 2083
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "id": "aBRT",
+      "type": "3",
+      "name": "Rapid Bus",
+      "trips": [
+         {
+            "headsign": "Ainslie",
+            "stops": [
+               {
+                  "stop_id": "1046",
+                  "time_from_last": 0,
+                  "cumulative_time": 0
+               },
+               {
+                  "stop_id": "3530",
+                  "time_from_last": 450,
+                  "cumulative_time": 450
+               },
+               {
+                  "stop_id": "1458",
+                  "time_from_last": 527,
+                  "cumulative_time": 977
+               },
+               {
+                  "lon": "-80.323036",
+                  "name": "Cambridge Centre",
+                  "cumulative_time": 1203,
+                  "time_from_last": 226,
+                  "lat": "43.392311"
+               },
+               {
+                  "stop_id": "3537",
+                  "time_from_last": 178,
+                  "cumulative_time": 1381
+               },
+               {
+                  "lon": "-80.318558",
+                  "name": "Delta",
+                  "cumulative_time": 1643,
+                  "time_from_last": 262,
+                  "lat": "43.373363"
+               },
+               {
+                  "stop_id": "1522",
+                  "time_from_last": 292,
+                  "cumulative_time": 1935
+               }
+            ]
+         },
+         {
+            "headsign": "Fairview Park Mall",
+            "stops": [
+               {
+                  "stop_id": "1522",
+                  "time_from_last": 0,
+                  "cumulative_time": 0
+               },
+               {
+                  "lon": "-80.318558",
+                  "name": "Delta",
+                  "cumulative_time": 294,
+                  "time_from_last": 294,
+                  "lat": "43.373363"
+               },
+               {
+                  "stop_id": "3538",
+                  "time_from_last": 264,
+                  "cumulative_time": 558
+               },
+               {
+                  "lon": "-80.323036",
+                  "name": "Cambridge Centre",
+                  "cumulative_time": 738,
+                  "time_from_last": 180,
+                  "lat": "43.392311"
+               },
+               {
+                  "stop_id": "1481",
+                  "time_from_last": 228,
+                  "cumulative_time": 966
+               },
+               {
+                  "stop_id": "3530",
+                  "time_from_last": 264,
+                  "cumulative_time": 1230
+               },
+               {
+                  "stop_id": "1046",
+                  "time_from_last": 450,
+                  "cumulative_time": 1680
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "id": "201_2017",
+      "type": "3",
+      "name": "Fischer-Hallman iXpress",
+      "trips": [
+         {
+            "headsign": "Conestoga Mall",
+            "stops": [
+               {
+                  "lon": "-80.462486",
+                  "name": "Block Line",
+                  "cumulative_time": 0,
+                  "lat": "43.422459",
+                  "time_from_last": 0
+               },
+               {
+                  "lon": "-80.469864",
+                  "name": "Block Line / Homer Watson",
+                  "cumulative_time": 120,
+                  "time_from_last": 120,
+                  "lat": "43.418652"
+               },
+               {
+                  "stop_id": "2105",
+                  "time_from_last": 116,
+                  "cumulative_time": 236
+               },
+               {
+                  "stop_id": "2881",
+                  "time_from_last": 129,
+                  "cumulative_time": 365
+               },
+               {
+                  "stop_id": "3189",
+                  "time_from_last": 45,
+                  "cumulative_time": 410
+               },
+               {
+                  "stop_id": "3895",
+                  "time_from_last": 56,
+                  "cumulative_time": 466
+               },
+               {
+                  "stop_id": "3893",
+                  "time_from_last": 65,
+                  "cumulative_time": 531
+               },
+               {
+                  "stop_id": "2969",
+                  "time_from_last": 30,
+                  "cumulative_time": 561
+               },
+               {
+                  "stop_id": "2971",
+                  "time_from_last": 63,
+                  "cumulative_time": 624
+               },
+               {
+                  "stop_id": "3892",
+                  "time_from_last": 82,
+                  "cumulative_time": 706
+               },
+               {
+                  "stop_id": "3170",
+                  "time_from_last": 67,
+                  "cumulative_time": 773
+               },
+               {
+                  "stop_id": "3169",
+                  "time_from_last": 235,
+                  "cumulative_time": 1008
+               },
+               {
+                  "stop_id": "3167",
+                  "time_from_last": 114,
+                  "cumulative_time": 1122
+               },
+               {
+                  "stop_id": "3165",
+                  "time_from_last": 192,
+                  "cumulative_time": 1314
+               },
+               {
+                  "stop_id": "1972",
+                  "time_from_last": 67,
+                  "cumulative_time": 1381
+               },
+               {
+                  "stop_id": "3162",
+                  "time_from_last": 63,
+                  "cumulative_time": 1444
+               },
+               {
+                  "stop_id": "3890",
+                  "time_from_last": 134,
+                  "cumulative_time": 1578
+               },
+               {
+                  "stop_id": "1117",
+                  "time_from_last": 72,
+                  "cumulative_time": 1650
+               },
+               {
+                  "stop_id": "3899",
+                  "time_from_last": 190,
+                  "cumulative_time": 1840
+               },
+               {
+                  "stop_id": "2521",
+                  "time_from_last": 51,
+                  "cumulative_time": 1891
+               },
+               {
+                  "stop_id": "2524",
+                  "time_from_last": 57,
+                  "cumulative_time": 1948
+               },
+               {
+                  "stop_id": "2509",
+                  "time_from_last": 40,
+                  "cumulative_time": 1988
+               },
+               {
+                  "stop_id": "1916",
+                  "time_from_last": 18,
+                  "cumulative_time": 2006
+               },
+               {
+                  "stop_id": "1918",
+                  "time_from_last": 57,
+                  "cumulative_time": 2063
+               },
+               {
+                  "stop_id": "3798",
+                  "time_from_last": 55,
+                  "cumulative_time": 2118
+               }
+            ]
+         },
+         {
+            "headsign": "Block Line",
+            "stops": [
+               {
+                  "stop_id": "3798"
+               },
+               {
+                  "stop_id": "1918"
+               },
+               {
+                  "stop_id": "1916"
+               },
+               {
+                  "stop_id": "2509"
+               },
+               {
+                  "stop_id": "2524"
+               },
+               {
+                  "stop_id": "2521"
+               },
+               {
+                  "stop_id": "3899"
+               },
+               {
+                  "stop_id": "1099"
+               },
+               {
+                  "stop_id": "3890"
+               },
+               {
+                  "stop_id": "3162"
+               },
+               {
+                  "stop_id": "1972"
+               },
+               {
+                  "stop_id": "3165"
+               },
+               {
+                  "stop_id": "3167"
+               },
+               {
+                  "stop_id": "3169"
+               },
+               {
+                  "stop_id": "3170"
+               },
+               {
+                  "stop_id": "3892"
+               },
+               {
+                  "stop_id": "2971"
+               },
+               {
+                  "stop_id": "2969"
+               },
+               {
+                  "stop_id": "3893"
+               },
+               {
+                  "stop_id": "3895"
+               },
+               {
+                  "stop_id": "3189"
+               },
+               {
+                  "stop_id": "2881"
+               },
+               {
+                  "stop_id": "2105"
+               },
+               {
+                  "lon": "-80.469864",
+                  "name": "Block Line / Homer Watson",
+                  "lat": "43.418652"
+               },
+               {
+                  "lon": "-80.462486",
+                  "name": "Block Line",
+                  "lat": "43.422459",
+                  "time_from_last": 120
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "id": "202_2017",
+      "type": "3",
+      "name": "University iXpress",
+      "trips": [
+         {
+            "headsign": "Conestoga Mall",
+            "stops": [
+               {
+                  "stop_id": "3908"
+               },
+               {
+                  "stop_id": "3904"
+               },
+               {
+                  "stop_id": "3905"
+               },
+               {
+                  "stop_id": "3686"
+               },
+               {
+                  "stop_id": "1994"
+               },
+               {
+                  "stop_id": "1997"
+               },
+               {
+                  "stop_id": "1999"
+               },
+               {
+                  "stop_id": "3683"
+               },
+               {
+                  "stop_id": "2675"
+               },
+               {
+                  "stop_id": "3620"
+               },
+               {
+                  "stop_id": "2787"
+               },
+               {
+                  "stop_id": "2788"
+               },
+               {
+                  "lon": "-80.507896",
+                  "name": "University / Lincoln",
+                  "lat": "43.483486"
+               },
+               {
+                  "lon": "-80.494034",
+                  "name": "University / Bridge",
+                  "lat": "43.489414"
+               },
+               {
+                  "stop_id": "3671"
+               },
+               {
+                  "stop_id": "3669"
+               },
+               {
+                  "stop_id": "2035"
+               },
+               {
+                  "stop_id": "3766"
+               },
+               {
+                  "stop_id": "3765"
+               },
+               {
+                  "stop_id": "3763"
+               },
+               {
+                  "stop_id": "3756"
+               },
+               {
+                  "stop_id": "3798"
+               }
+            ]
+         },
+         {
+            "headsign": "Boardwalk",
+            "stops": [
+               {
+                  "stop_id": "3798"
+               },
+               {
+                  "stop_id": "3756"
+               },
+               {
+                  "stop_id": "3763"
+               },
+               {
+                  "stop_id": "3752"
+               },
+               {
+                  "stop_id": "3750"
+               },
+               {
+                  "stop_id": "1931"
+               },
+               {
+                  "stop_id": "1938"
+               },
+               {
+                  "stop_id": "3665"
+               },
+               {
+                  "lon": "-80.494034",
+                  "name": "University / Bridge",
+                  "lat": "43.489414"
+               },
+               {
+                  "lon": "-80.507896",
+                  "name": "University / Lincoln",
+                  "lat": "43.483486"
+               },
+               {
+                  "stop_id": "2832"
+               },
+               {
+                  "stop_id": "2670"
+               },
+               {
+                  "stop_id": "1167"
+               },
+               {
+                  "stop_id": "3943"
+               },
+               {
+                  "stop_id": "1090"
+               },
+               {
+                  "stop_id": "1966"
+               },
+               {
+                  "stop_id": "1969"
+               },
+               {
+                  "stop_id": "1994"
+               },
+               {
+                  "stop_id": "3684"
+               },
+               {
+                  "stop_id": "3906"
+               },
+               {
+                  "stop_id": "3903"
+               },
+               {
+                  "stop_id": "3908"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "id": "203_2017",
+      "type": "3",
+      "name": "Victoria-Highland iXpress",
+      "trips": [
+         {
+            "headsign": "Lackner Centre",
+            "stops": [
+               {
+                  "stop_id": "3908",
+                  "time_from_last": 0,
+                  "cumulative_time": 0
+               },
+               {
+                  "lon": "-80.553383",
+                  "name": "Ira Needles / Victoria",
+                  "cumulative_time": 148,
+                  "lat": "43.429478",
+                  "time_from_last": 148
+               },
+               {
+                  "lon": "-80.552773",
+                  "name": "Ira Needles / Highland",
+                  "cumulative_time": 190,
+                  "lat": "43.424187",
+                  "time_from_last": 42
+               },
+               {
+                  "lon": "-80.544182",
+                  "name": "Highland / Westforest",
+                  "cumulative_time": 258,
+                  "lat": "43.425171",
+                  "time_from_last": 68
+               },
+               {
+                  "lon": "-80.531647",
+                  "name": "Highland / Eastforest",
+                  "cumulative_time": 322,
+                  "lat": "43.429501",
+                  "time_from_last": 64
+               },
+               {
+                  "lon": "-80.514442",
+                  "name": "Highland / Fischer-Hallman",
+                  "cumulative_time": 443,
+                  "lat": "43.435890",
+                  "time_from_last": 121
+               },
+               {
+                  "stop_id": "3358",
+                  "time_from_last": 16,
+                  "cumulative_time": 459
+               },
+               {
+                  "stop_id": "3356",
+                  "time_from_last": 42,
+                  "cumulative_time": 501
+               },
+               {
+                  "stop_id": "2756",
+                  "time_from_last": 54,
+                  "cumulative_time": 555
+               },
+               {
+                  "stop_id": "2754",
+                  "time_from_last": 68,
+                  "cumulative_time": 623
+               },
+               {
+                  "lon": "-80.493332",
+                  "name": "Gaukel",
+                  "cumulative_time": 715,
+                  "lat": "43.450146",
+                  "time_from_last": 92
+               },
+               {
+                  "lon": "-80.498840",
+                  "name": "Grand Hub",
+                  "cumulative_time": 772,
+                  "lat": "43.453091",
+                  "time_from_last": 57
+               },
+               {
+                  "lon": "-80.492401",
+                  "name": "Victoria / Ahrens",
+                  "cumulative_time": 845,
+                  "lat": "43.455238",
+                  "time_from_last": 73
+               },
+               {
+                  "lon": "-80.482628",
+                  "name": "Victoria / Lancaster",
+                  "cumulative_time": 925,
+                  "lat": "43.458626",
+                  "time_from_last": 80
+               },
+               {
+                  "lon": "-80.464325",
+                  "name": "Victoria / River",
+                  "cumulative_time": 1031,
+                  "lat": "43.464272",
+                  "time_from_last": 106
+               },
+               {
+                  "stop_id": "2347",
+                  "time_from_last": 50,
+                  "cumulative_time": 1081
+               },
+               {
+                  "stop_id": "2339",
+                  "time_from_last": 48,
+                  "cumulative_time": 1129
+               },
+               {
+                  "lon": "-80.436729",
+                  "name": "Lackner / Keewatin",
+                  "cumulative_time": 1184,
+                  "lat": "43.465046",
+                  "time_from_last": 55
+               },
+               {
+                  "stop_id": "1031",
+                  "time_from_last": 89,
+                  "cumulative_time": 1273
+               }
+            ]
+         },
+         {
+            "headsign": "The Boardwalk",
+            "stops": [
+               {
+                  "stop_id": "1031",
+                  "time_from_last": 0,
+                  "cumulative_time": 0
+               },
+               {
+                  "lon": "-80.436729",
+                  "name": "Lackner / Keewatin",
+                  "cumulative_time": 83,
+                  "lat": "43.465046",
+                  "time_from_last": 83
+               },
+               {
+                  "stop_id": "2339",
+                  "time_from_last": 55,
+                  "cumulative_time": 138
+               },
+               {
+                  "stop_id": "2336",
+                  "time_from_last": 55,
+                  "cumulative_time": 193
+               },
+               {
+                  "lon": "-80.464325",
+                  "name": "Victoria / River",
+                  "cumulative_time": 245,
+                  "lat": "43.464272",
+                  "time_from_last": 52
+               },
+               {
+                  "lon": "-80.482628",
+                  "name": "Victoria / Lancaster",
+                  "cumulative_time": 342,
+                  "lat": "43.458626",
+                  "time_from_last": 97
+               },
+               {
+                  "lon": "-80.492401",
+                  "name": "Victoria / Ahrens",
+                  "cumulative_time": 419,
+                  "lat": "43.455238",
+                  "time_from_last": 77
+               },
+               {
+                  "lon": "-80.498840",
+                  "name": "Grand Hub",
+                  "cumulative_time": 498,
+                  "lat": "43.453091",
+                  "time_from_last": 79
+               },
+               {
+                  "lon": "-80.493332",
+                  "name": "Gaukel",
+                  "cumulative_time": 555,
+                  "lat": "43.450146",
+                  "time_from_last": 57
+               },
+               {
+                  "stop_id": "2706",
+                  "time_from_last": 92,
+                  "cumulative_time": 647
+               },
+               {
+                  "stop_id": "2756",
+                  "time_from_last": 61,
+                  "cumulative_time": 708
+               },
+               {
+                  "stop_id": "3391",
+                  "time_from_last": 52,
+                  "cumulative_time": 760
+               },
+               {
+                  "stop_id": "3198",
+                  "time_from_last": 64,
+                  "cumulative_time": 824
+               },
+               {
+                  "lon": "-80.514442",
+                  "name": "Highland / Fischer-Hallman",
+                  "cumulative_time": 842,
+                  "lat": "43.435890",
+                  "time_from_last": 18
+               },
+               {
+                  "lon": "-80.531647",
+                  "name": "Highland / Eastforest",
+                  "cumulative_time": 960,
+                  "lat": "43.429501",
+                  "time_from_last": 118
+               },
+               {
+                  "lon": "-80.544182",
+                  "name": "Highland / Westforest",
+                  "cumulative_time": 1024,
+                  "lat": "43.425171",
+                  "time_from_last": 64
+               },
+               {
+                  "lon": "-80.552773",
+                  "name": "Ira Needles / Highland",
+                  "cumulative_time": 1084,
+                  "lat": "43.424187",
+                  "time_from_last": 60
+               },
+               {
+                  "lon": "-80.553383",
+                  "name": "Ira Needles / Victoria",
+                  "cumulative_time": 1253,
+                  "lat": "43.429478",
+                  "time_from_last": 169
+               },
+               {
+                  "stop_id": "3908",
+                  "time_from_last": 204,
+                  "cumulative_time": 1457
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "id": "204_2017",
+      "type": "3",
+      "name": "Ottawa iXpress",
+      "trips": [
+         {
+            "headsign": "Sunrise Centre",
+            "stops": [
+               {
+                  "stop_id": "1031",
+                  "time_from_last": 0,
+                  "cumulative_time": 0
+               },
+               {
+                  "stop_id": "1671",
+                  "time_from_last": 29,
+                  "cumulative_time": 29
+               },
+               {
+                  "stop_id": "1669",
+                  "time_from_last": 57,
+                  "cumulative_time": 86
+               },
+               {
+                  "lon": "-80.450882",
+                  "name": "Ottawa / Franklin",
+                  "cumulative_time": 141,
+                  "lat": "43.448612",
+                  "time_from_last": 55
+               },
+               {
+                  "stop_id": "2851",
+                  "time_from_last": 50,
+                  "cumulative_time": 191
+               },
+               {
+                  "stop_id": "2849",
+                  "time_from_last": 49,
+                  "cumulative_time": 240
+               },
+               {
+                  "lon": "-80.472466",
+                  "name": "Ottawa / Charles",
+                  "cumulative_time": 305,
+                  "lat": "43.441269",
+                  "time_from_last": 65
+               },
+               {
+                  "lon": "-80.478577",
+                  "name": "Mill",
+                  "cumulative_time": 389,
+                  "lat": "43.434185",
+                  "time_from_last": 84
+               },
+               {
+                  "stop_id": "2906",
+                  "time_from_last": 110,
+                  "cumulative_time": 499
+               },
+               {
+                  "stop_id": "2899",
+                  "time_from_last": 96,
+                  "cumulative_time": 595
+               },
+               {
+                  "lon": "-80.511414",
+                  "name": "Ottawa / Fischer-Hallman",
+                  "cumulative_time": 662,
+                  "lat": "43.416832",
+                  "time_from_last": 67
+               }
+            ]
+         },
+         {
+            "headsign": "Lackner Centre",
+            "stops": [
+               {
+                  "lon": "-80.511414",
+                  "name": "Ottawa / Fischer-Hallman",
+                  "cumulative_time": 0,
+                  "lat": "43.416832",
+                  "time_from_last": 0
+               },
+               {
+                  "stop_id": "2869",
+                  "time_from_last": 59,
+                  "cumulative_time": 59
+               },
+               {
+                  "stop_id": "3229",
+                  "time_from_last": 101,
+                  "cumulative_time": 160
+               },
+               {
+                  "lon": "-80.478577",
+                  "name": "Mill",
+                  "cumulative_time": 273,
+                  "lat": "43.434185",
+                  "time_from_last": 113
+               },
+               {
+                  "lon": "-80.472466",
+                  "name": "Ottawa / Charles",
+                  "cumulative_time": 360,
+                  "lat": "43.441269",
+                  "time_from_last": 87
+               },
+               {
+                  "stop_id": "2634",
+                  "time_from_last": 69,
+                  "cumulative_time": 429
+               },
+               {
+                  "stop_id": "2633",
+                  "time_from_last": 46,
+                  "cumulative_time": 475
+               },
+               {
+                  "lon": "-80.450882",
+                  "name": "Ottawa / Franklin",
+                  "cumulative_time": 521,
+                  "lat": "43.448612",
+                  "time_from_last": 46
+               },
+               {
+                  "stop_id": "1669",
+                  "time_from_last": 52,
+                  "cumulative_time": 573
+               },
+               {
+                  "stop_id": "1690",
+                  "time_from_last": 61,
+                  "cumulative_time": 634
+               },
+               {
+                  "stop_id": "1031",
+                  "time_from_last": 30,
+                  "cumulative_time": 664
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "id": "205_2017",
+      "type": "3",
+      "name": "Mid-Region iXpress",
+      "trips": [
+         {
+            "headsign": "Hespeler Village",
+            "stops": [
+               {
+                  "stop_id": "1046",
+                  "time_from_last": 0,
+                  "cumulative_time": 0
+               },
+               {
+                  "stop_id": "1763",
+                  "time_from_last": 104,
+                  "cumulative_time": 104
+               },
+               {
+                  "stop_id": "1760",
+                  "time_from_last": 65,
+                  "cumulative_time": 169
+               },
+               {
+                  "stop_id": "1758",
+                  "time_from_last": 73,
+                  "cumulative_time": 242
+               },
+               {
+                  "lon": "-80.447044",
+                  "name": "Homer Watson / Manitou",
+                  "cumulative_time": 302,
+                  "lat": "43.399120",
+                  "time_from_last": 60
+               },
+               {
+                  "lon": "-80.432037",
+                  "name": "Homer Watson / Pioneer",
+                  "cumulative_time": 404,
+                  "lat": "43.395309",
+                  "time_from_last": 102
+               },
+               {
+                  "lon": "-80.421776",
+                  "name": "Homer Watson / Doon",
+                  "cumulative_time": 496,
+                  "lat": "43.389790",
+                  "time_from_last": 92
+               },
+               {
+                  "stop_id": "3960",
+                  "time_from_last": 353,
+                  "cumulative_time": 849
+               },
+               {
+                  "stop_id": "1636",
+                  "time_from_last": 417,
+                  "cumulative_time": 1266
+               },
+               {
+                  "stop_id": "3530",
+                  "time_from_last": 92,
+                  "cumulative_time": 1358
+               },
+               {
+                  "stop_id": "3939",
+                  "time_from_last": 65,
+                  "cumulative_time": 1423
+               },
+               {
+                  "stop_id": "2317",
+                  "time_from_last": 56,
+                  "cumulative_time": 1479
+               },
+               {
+                  "lon": "-80.364639",
+                  "name": "Maple Grove / Boxwood",
+                  "cumulative_time": 1578,
+                  "lat": "43.426907",
+                  "time_from_last": 99
+               },
+               {
+                  "lon": "-80.336464",
+                  "name": "Maple Grove / Beaverdale",
+                  "cumulative_time": 1722,
+                  "lat": "43.434307",
+                  "time_from_last": 144
+               },
+               {
+                  "stop_id": "1302",
+                  "time_from_last": 94,
+                  "cumulative_time": 1816
+               },
+               {
+                  "stop_id": "1307",
+                  "time_from_last": 52,
+                  "cumulative_time": 1868
+               },
+               {
+                  "stop_id": "1309",
+                  "time_from_last": 65,
+                  "cumulative_time": 1933
+               }
+            ]
+         },
+         {
+            "headsign": "Fairview Park Mall",
+            "stops": [
+               {
+                  "stop_id": "1309",
+                  "time_from_last": 0,
+                  "cumulative_time": 0
+               },
+               {
+                  "stop_id": "1307",
+                  "time_from_last": 107,
+                  "cumulative_time": 107
+               },
+               {
+                  "stop_id": "1302",
+                  "time_from_last": 49,
+                  "cumulative_time": 156
+               },
+               {
+                  "lon": "-80.336464",
+                  "name": "Maple Grove / Beaverdale",
+                  "cumulative_time": 250,
+                  "lat": "43.434307",
+                  "time_from_last": 94
+               },
+               {
+                  "lon": "-80.364639",
+                  "name": "Maple Grove / Boxwood",
+                  "cumulative_time": 394,
+                  "lat": "43.426907",
+                  "time_from_last": 144
+               },
+               {
+                  "stop_id": "2317",
+                  "time_from_last": 99,
+                  "cumulative_time": 493
+               },
+               {
+                  "stop_id": "2318",
+                  "time_from_last": 61,
+                  "cumulative_time": 554
+               },
+               {
+                  "stop_id": "3530",
+                  "time_from_last": 54,
+                  "cumulative_time": 608
+               },
+               {
+                  "stop_id": "1636",
+                  "time_from_last": 110,
+                  "cumulative_time": 718
+               },
+               {
+                  "stop_id": "3960",
+                  "time_from_last": 386,
+                  "cumulative_time": 1104
+               },
+               {
+                  "lon": "-80.421776",
+                  "name": "Homer Watson / Doon",
+                  "cumulative_time": 1301,
+                  "lat": "43.389790",
+                  "time_from_last": 197
+               },
+               {
+                  "lon": "-80.432037",
+                  "name": "Homer Watson / Pioneer",
+                  "cumulative_time": 1378,
+                  "lat": "43.395309",
+                  "time_from_last": 77
+               },
+               {
+                  "lon": "-80.447044",
+                  "name": "Homer Watson / Manitou",
+                  "cumulative_time": 1494,
+                  "lat": "43.399120",
+                  "time_from_last": 116
+               },
+               {
+                  "stop_id": "1758",
+                  "time_from_last": 60,
+                  "cumulative_time": 1554
+               },
+               {
+                  "stop_id": "1760",
+                  "time_from_last": 67,
+                  "cumulative_time": 1621
+               },
+               {
+                  "stop_id": "1763",
+                  "time_from_last": 68,
+                  "cumulative_time": 1689
+               },
+               {
+                  "stop_id": "1046",
+                  "time_from_last": 101,
+                  "cumulative_time": 1790
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "id": "206_2017",
+      "type": "3",
+      "name": "Coronation iXpress",
+      "trips": [
+         {
+            "headsign": "Ainslie",
+            "stops": [
+               {
+                  "stop_id": "1046",
+                  "time_from_last": 0,
+                  "cumulative_time": 0
+               },
+               {
+                  "stop_id": "1640",
+                  "time_from_last": 308,
+                  "cumulative_time": 308
+               },
+               {
+                  "stop_id": "3530",
+                  "time_from_last": 101,
+                  "cumulative_time": 409
+               },
+               {
+                  "stop_id": "1636",
+                  "time_from_last": 110,
+                  "cumulative_time": 519
+               },
+               {
+                  "stop_id": "1635",
+                  "time_from_last": 123,
+                  "cumulative_time": 642
+               },
+               {
+                  "stop_id": "1627",
+                  "time_from_last": 88,
+                  "cumulative_time": 730
+               },
+               {
+                  "stop_id": "1455",
+                  "time_from_last": 34,
+                  "cumulative_time": 764
+               },
+               {
+                  "stop_id": "1623",
+                  "time_from_last": 43,
+                  "cumulative_time": 807
+               },
+               {
+                  "stop_id": "1593",
+                  "time_from_last": 41,
+                  "cumulative_time": 848
+               },
+               {
+                  "stop_id": "1615",
+                  "time_from_last": 155,
+                  "cumulative_time": 1003
+               },
+               {
+                  "lon": "-80.318558",
+                  "name": "Delta",
+                  "cumulative_time": 1117,
+                  "lat": "43.373363",
+                  "time_from_last": 114
+               },
+               {
+                  "stop_id": "1472",
+                  "time_from_last": 106,
+                  "cumulative_time": 1223
+               },
+               {
+                  "stop_id": "1466",
+                  "time_from_last": 67,
+                  "cumulative_time": 1290
+               },
+               {
+                  "stop_id": "1522",
+                  "time_from_last": 76,
+                  "cumulative_time": 1366
+               }
+            ]
+         },
+         {
+            "headsign": "Fairview Park Mall",
+            "stops": [
+               {
+                  "stop_id": "1522",
+                  "time_from_last": 0,
+                  "cumulative_time": 0
+               },
+               {
+                  "stop_id": "1470",
+                  "time_from_last": 69,
+                  "cumulative_time": 69
+               },
+               {
+                  "stop_id": "1472",
+                  "time_from_last": 55,
+                  "cumulative_time": 124
+               },
+               {
+                  "lon": "-80.318558",
+                  "name": "Delta",
+                  "cumulative_time": 180,
+                  "lat": "43.373363",
+                  "time_from_last": 56
+               },
+               {
+                  "stop_id": "1597",
+                  "time_from_last": 102,
+                  "cumulative_time": 282
+               },
+               {
+                  "stop_id": "1593",
+                  "time_from_last": 140,
+                  "cumulative_time": 422
+               },
+               {
+                  "stop_id": "1443",
+                  "time_from_last": 36,
+                  "cumulative_time": 458
+               },
+               {
+                  "stop_id": "1587",
+                  "time_from_last": 45,
+                  "cumulative_time": 503
+               },
+               {
+                  "stop_id": "1585",
+                  "time_from_last": 38,
+                  "cumulative_time": 541
+               },
+               {
+                  "stop_id": "1575",
+                  "time_from_last": 152,
+                  "cumulative_time": 693
+               },
+               {
+                  "stop_id": "1636",
+                  "time_from_last": 143,
+                  "cumulative_time": 836
+               },
+               {
+                  "stop_id": "3530",
+                  "time_from_last": 92,
+                  "cumulative_time": 928
+               },
+               {
+                  "stop_id": "1567",
+                  "time_from_last": 82,
+                  "cumulative_time": 1010
+               },
+               {
+                  "stop_id": "1046",
+                  "time_from_last": 398,
+                  "cumulative_time": 1408
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "id": "207_2017",
+      "type": "3",
+      "name": "Lovell iXpress",
+      "trips": [
+         {
+            "headsign": "Southwood",
+            "stops": [
+               {
+                  "stop_id": "1309"
+               },
+               {
+                  "stop_id": "1312" 
+               },
+               {
+                  "stop_id": "1484" 
+               },
+               {
+                  "stop_id": "1485"
+               },
+               {
+                  "stop_id": "1487"
+               },
+               {
+                  "stop_id": "1490"
+               },
+               {
+                  "lon": "-80.317429",
+                  "lat": "43.396015",
+                  "name": "Bisop / Conestoga"
+               },
+               {
+                  "lon": "-80.323036",
+                  "name": "Cambridge Centre",
+                  "lat": "43.392311"
+               },
+               {
+                  "stop_id": "3537"
+               },
+               {
+                  "lon": "-80.318558",
+                  "name": "Delta",
+                  "lat": "43.373363"
+               },
+               {
+                  "stop_id": "1522"
+               },
+               {
+                  "stop_id": "3862" 
+               },
+               {
+                  "stop_id": "2148"
+               }
+            ]
+         },
+         {
+            "headsign": "Hespeler Village",
+            "stops": [
+               {
+                  "stop_id": "2148"
+               },
+               {
+                  "stop_id": "3863"
+               },
+               {
+                  "stop_id": "1522"
+               },
+               {
+                  "lon": "-80.318558",
+                  "name": "Delta",
+                  "lat": "43.373363"
+               },
+               {
+                  "stop_id": "3537"
+               },
+               {
+                  "lon": "-80.323036",
+                  "name": "Cambridge Centre",
+                  "lat": "43.392311"
+               },
+               {
+                  "lon": "-80.317429",
+                  "lat": "43.396015",
+                  "name": "Bisop / Conestoga"
+               },
+               {
+                  "stop_id": "1544"
+               },
+               {
+                  "stop_id": "1547"
+               },
+               {
+                  "stop_id": "1549"
+               },
+               {
+                  "stop_id": "1550"
+               },
+               {
+                  "stop_id": "1258"
+               },
+               {
+                  "stop_id": "1309"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "id": "208_2017",
+      "type": "3",
+      "name": "Hespeler Road iXpress",
+      "trips": [
+         {
+            "headsign": "South Cambridge Centre",
+            "stops": [
+               {
+                  "stop_id": "1309"
+               },
+               {
+                  "stop_id": "1312" 
+               },
+               {
+                  "stop_id": "1484" 
+               },
+               {
+                  "stop_id": "1317" 
+               },
+               {
+                  "stop_id": "1481" 
+               },
+               {
+                  "lon": "-80.323036",
+                  "name": "Cambridge Centre",
+                  "lat": "43.392311"
+               },
+               {
+                  "stop_id": "3537"
+               },
+               {
+                  "lon": "-80.318558",
+                  "name": "Delta",
+                  "lat": "43.373363"
+               },
+               {
+                  "stop_id": "1522"
+               },
+               {
+                  "stop_id": "1525"
+               },
+               {
+                  "stop_id": "1528"
+               }
+            ]
+         },
+         {
+            "headsign": "Hespeler Village",
+            "stops": [
+               {
+                  "stop_id": "1528"
+               },
+               {
+                  "stop_id": "1509"
+               },
+               {
+                  "stop_id": "1522"
+               },
+               {
+                  "lon": "-80.318558",
+                  "name": "Delta",
+                  "lat": "43.373363"
+               },
+               {
+                  "stop_id": "3537"
+               },
+               {
+                  "lon": "-80.323036",
+                  "name": "Cambridge Centre",
+                  "lat": "43.392311"
+               },
+               {
+                  "stop_id": "1481"
+               },
+               {
+                  "stop_id": "1317"
+               },
+               {
+                  "stop_id": "1550"
+               },
+               {
+                  "stop_id": "1258"
+               },
+               {
+                  "stop_id": "1309"
+               }
+            ]
+         }
+      ]
+   }
+]

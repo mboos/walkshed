@@ -1,0 +1,7 @@
+service_id,date,exception_type
+Wkd_Reg,20121226,2
+Wkd_Reg,20121231,2
+Boxing,20130102,2
+X_Mas,20130101,2
+Sunday_NYD,20121225,2
+NYE,20121224,2

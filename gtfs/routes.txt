@@ -1,0 +1,135 @@
+route_long_name,route_id,route_type,route_text_color,agency_id,route_color,route_url,route_short_name
+Erb West,5,3,,,,,5
+Highland,24,3,,,,,24
+Queen South,25,3,,,,,25
+Chicopee,27,3,,,,,27
+Victoria Hills,20,3,,,,,20
+Elmira,21,3,,,,,21
+Laurentian West,22,3,,,,,22
+Idlewood,23,3,,,,,23
+Keats Way,29,3,,,,,29
+Glasgow,4,3,,,,,4
+University/Fairview Park,8,3,,,,,8
+Huron Industrial AM Special,9931,3,,,,,9931
+Kitchener Train Stn. Shuttle,9935,3,,,,,9935
+Lakeshore,9,3,,,,,9
+King East Special,9986,3,,,,,9986
+SD-Auburn/SD-Chesapeake/SMH-S1 Express Special,9902,3,,,,,9902
+Rt. 7 PM Special,9985,3,,,,,9985
+Rt 32 and 7 Evening Special,9983,3,,,,,9983
+KCI-Downtown Special,9981,3,,,,,9981
+UW Special 1,9906,3,,,,,9906
+UW Special 2,9907,3,,,,,9907
+Rt 9 & Rt 12 Special,9904,3,,,,,9904
+St David Special,9905,3,,,,,9905
+Christopher,59,3,,,,,59
+Elmwood,58,3,,,,,58
+SD-Dansbury/BCI-Auburn/SMH-S2 Xp Special,9901,3,,,,,9901
+St. Andrews,55,3,,,,,55
+Lisbon Pines,54,3,,,,,54
+Blair Road,57,3,,,,,57
+Dunbar,56,3,,,,,56
+Hespeler Road,51,3,,,,,51
+Franklin Boulevard,53,3,,,,,53
+Rt 19/SJAM-Erbsville/Rt 13 Special,9909,3,,,,,9909
+Forest Glen/Conestoga College,16,3,,,,,16
+Conestoga Mall/Conestoga College Express,114,3,,,,,114
+St. B Cooper-Winston/JHSS Melran,9852,3,,,,,9852
+Forest Glen/Conestoga College Express,116,3,,,,,116
+CBC/GCI PM/ARC Industries,9854,3,,,,,9854
+St. B Melran PM,9855,3,,,,,9855
+Stanley Park/Conestoga College Express,113,3,,,,,113
+Hespeler/Conestoga College Express,112,3,,,,,112
+GCI Route 60 Special,9858,3,,,,,9858
+Fairview Park/Ainslie Street,52,3,,,,,52
+RCSS-Rolling Meadows/SMH-Max Becker,9911,3,,,,,9911
+RCSS-Westmount Special,9910,3,,,,,9910
+RCSS-Elm Ridge/SMH-Ottawa South Special,9913,3,,,,,9913
+RCSS-Highview/SMH-Activa Special,9912,3,,,,,9912
+SMH-Keewatin/SMH-Erinbrook Special,9915,3,,,,,9915
+SD-Eastbridge/BCI-Dansbury Special,9914,3,,,,,9914
+SMH-Doon Valley Special,9917,3,,,,,9917
+Con Col Express Special,9916,3,,,,,9916
+Oktoberfest Chicopee Shuttle,8884,3,,,,,8884
+Rt 7F/Rt 7A/SMH-F2 Express/SMH-Vanier Special,9918,3,,,,,9918
+Oktoberfest Concordia Shuttle,8881,3,,,,,8881
+Oktoberfest Bingeman's Shuttle,8882,3,,,,,8882
+Oktoberfest Queensmount Shuttle,8883,3,,,,,8883
+Ottawa South,3,3,,,,,3
+Mainline,7,3,,,,,7
+Huron,33,3,,,,,33
+Kumpf,32,3,,,,,32
+Lexington,31,3,,,,,31
+Eastbridge,35,3,,,,,35
+RCSS-Driftwood Special,9964,3,,,,,9964
+SMH-F1 Express/SMH-Erinbrook Special,9965,3,,,,,9965
+ECI-Fairview 1/SMH-F2 Express/SMH-Max Becker Spec,9966,3,,,,,9966
+ECI-Fairview 2/SMH-F3 Express/SMH-Activa Special,9967,3,,,,,9967
+WCI-Lakeshore Special,9960,3,,,,,9960
+SJAM-Keats Way/SJAM-HHM Special,9961,3,,,,,9961
+RCSS-Highland Hills Special,9963,3,,,,,9963
+HHSS-Strasburg/SMH-Vanier/SMH-Ottawa South Special,9968,3,,,,,9968
+Northview Acres,60,3,,,,,60
+Conestoga College/Cambridge Centre,61,3,,,,,61
+Woodside,62,3,,,,,62
+Champlain,63,3,,,,,63
+Langs,64,3,,,,,64
+Fisher Mills,65,3,,,,,65
+Winston,66,3,,,,,66
+Lovell Industrial,67,3,,,,,67
+CHCI-Laurentian/SMH-Doon Valley Special,9977,3,,,,,9977
+RCSS-Forestwood/SMH-Old Chicopee Special,9976,3,,,,,9976
+RCSS-Westheights/SMH-Lackner Special,9975,3,,,,,9975
+Forest Hill,2,3,,,,,2
+CHCI-Forest Glen/SMH-Biehn Special,9972,3,,,,,9972
+SMH-Courtland Special,9971,3,,,,,9971
+Bridgeport,6,3,,,,,6
+ECI-Downtown Special,9979,3,,,,,9979
+HHSS-Erinbrook/SMH-Courtland Special,9970,3,,,,,9970
+Northfield Industrial Special,9932,3,,,,,9932
+Late Night Loop,91,3,,,,,91
+Country Hills,11,3,,,,,11
+Conestoga College,10,3,,,,,10
+Laurelwood,13,3,,,,,13
+Fairview Park/Conestoga Mall,12,3,,,,,12
+Frederick,15,3,,,,,15
+Bathurst,14,3,,,,,14
+Heritage Park,17,3,,,,,17
+St. B Poplar-Baldwin PM,9851,3,,,,,9851
+Victoria South,19,3,,,,,19
+Guelph Street,18,3,,,,,18
+Preston HS - Langs,9853,3,,,,,9853
+Ainslie Street/Conestoga College Express,111,3,,,,,111
+HHSS-Erinbrook/SMH-Biehn/SMH-F3 Xp Special,9908,3,,,,,9908
+Fairview Park/Conestoga College Express,110,3,,,,,110
+Stanley Park,1,3,,,,,1
+WCI-Northlake/Rt 7 Special,9959,3,,,,,9959
+WCI-Conservation Special,9958,3,,,,,9958
+SD-Northlake Special,9955,3,,,,,9955
+SD-Conestoga Mall Special,9954,3,,,,,9954
+SD-Chesapeake Special,9956,3,,,,,9956
+SD-Auburn/BCI-Lexington Special,9951,3,,,,,9951
+SD-Eastbridge Special,9953,3,,,,,9953
+SD-Bridge/BCI-Dansbury Special,9952,3,,,,,9952
+iXpress F-H,201,3,,,,,201
+iXpress,200,3,,,,,200
+iXpress University,202,3,,,,,202
+RCSS-Westmount/SMH-Keewatin Special,9974,3,,,,,9974
+Doon South Bus Plus,76,3,,,,,76
+Saginaw,75,3,,,,,75
+Northlake BusPlus,73,3,,,,,73
+Cherry Blossom BusPlus,72,3,,,,,72
+Melran,71,3,,,,,71
+St. B Melran-Saginaw,9805,3,,,,,9805
+St. B Cooper-Winston-Langs,9804,3,,,,,9804
+GCI AM,9803,3,,,,,9803
+St. B Melran-Winston/GCI Elgin,9802,3,,,,,9802
+St. B Poplar-Baldwin/Winston Loop,9801,3,,,,,9801
+Northlake Special,9903,3,,,,,9903
+Rt 7B/SMH-F1 Xp/SMH-F4 Special,9919,3,,,,,9919
+Route 72 Evening Industrial,9881,3,,,,,9881
+Rt 13 Special,9920,3,,,,,9920
+UW Special 3,9921,3,,,,,9921
+CHCI-Ottawa/SMH-Courtland Special,9922,3,,,,,9922
+SMH-C1 Express Special,9923,3,,,,,9923
+UW-Lakeshore,9924,3,,,,,9924
