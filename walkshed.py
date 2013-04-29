@@ -59,9 +59,11 @@ class Map(object):
     
     def calculateWalkDistances(self, stops):
         self._clearDistances()
+        
         gr = graph()
         gr.add_nodes(self.nodes.keys())
         
+        # build the graph from our map
         for way in self.ways.values():
             lastNode = None
             for node in way.refs:
@@ -81,64 +83,75 @@ class Map(object):
             for key, node in self.nodes.iteritems():
                 if node.walkable:
                     dist = node.distanceTo(stop)
-                    if dist <= 10:
+                    if dist <= 10: # here we add all nodes within 10 m (approx road width)
                         gr.add_edge((stop, key), dist)
                     if dist < nearestDist:
                         nearestDist = node.distanceTo(stop)
                         nearest = key
-                        
+            # ensure the nearest node is not missed
             if nearestDist > 10:
                 gr.add_edge((stop, nearest), nearestDist)
             
+            # this graph libary may be overkill (i.e. we should probably stop Djikstra's algorithm
+            # after some distance) but it beats reinventing the wheel
             st, distances = shortest_path(gr, stop)
             
+            # Set the walking distance to be whatever is the nearest stop
             for key, dist in distances.iteritems():
                 if key in self.nodes and dist < self.nodes[key].walkDistance:
                     self.nodes[key].walkDistance = dist
     
     def generateWalkShed(self, distThreshold, props=None):
+        # base geoJSON
         feature = {'type': 'Feature',
                     'geometry' : {'type': 'MultiLineString', 'coordinates': []},
                     'properties': props or {}}
         
+        # add coordinates as LineStrings to geoJSON MultiLineString
         def addSequence(feature, sequence):
             coords = []
             for node in sequence:
                 coords.append([node.lon, node.lat])
             feature['geometry']['coordinates'].append(coords)
         
-        
+        # for each way, determine which nodes are within walking threshold
         for way in self.ways.values():
             sequence = []
             for i, noderef in enumerate(way.refs):
                 if noderef in self.nodes:
                     node = self.nodes[noderef]
                     distLeft = distThreshold - node.walkDistance
-                    if distLeft >= 0:
+                    if distLeft >= 0: # node is within walking threshold
                         if len(sequence) == 0 and i > 0:
+                            # need to back-track to find the point on way where walkability begins
                             lastNode = self.nodes[way.refs[i-1]]
                             lastDist = node.distanceTo(lastNode)
                             portion = distLeft / lastDist
                             sequence.append(Node(node.lon + portion * (lastNode.lon - node.lon),
                                                  node.lat + portion * (lastNode.lat - node.lat)))
                         sequence.append(node)
-                        if i+1 < len(way.refs):
+                        if i+1 < len(way.refs): # peek ahead to next node
                             nextNode = self.nodes[way.refs[i+1]]
                             nextDistLeft = distThreshold - nextNode.walkDistance
                             nextDist = node.distanceTo(nextNode)
                             if nextDistLeft < 0 or distLeft + nextDistLeft < nextDist:
+                                # if the next node is not in the walkable area, or there is a portion
+                                # of the way between this node and the next that too far from transit,
+                                # find the point of the furthest possible walking distance and stop
+                                # line there
                                 portion = distLeft / nextDist
                                 sequence.append(Node(node.lon + portion * (nextNode.lon - node.lon),
                                                  node.lat + portion * (nextNode.lat - node.lat)))
                                 addSequence(feature, sequence)
                                 sequence = []
-                
+            # if the final node on the way was walkable, need to add this last LineString
             if len(sequence) > 0:
                 addSequence(feature, sequence)
         
         return feature
     
 def addRouteStops(route, stopNodes, stops):
+    # add 
     for trip in route['trips']:
         for stop in trip['stops']:
             if 'stop_id' in stop:
