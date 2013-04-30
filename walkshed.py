@@ -4,8 +4,6 @@ from imposm.parser import OSMParser
 from pygraph.classes.graph import graph
 from pygraph.algorithms.minmax import shortest_path
 
-from readCSV import readCSV
-
 import math
 
 EARTH_RADIUS = 6371e3
@@ -150,6 +148,19 @@ class Map(object):
         
         return feature
     
+def processShed(pbfFile, outFile, distance, mode, concurrent, stopNodes):
+    # instantiate map and parser and start parsing
+    osmap = Map()
+    p = OSMParser(concurrency=concurrent, ways_callback=osmap.ways_callback, coords_callback=osmap.nodes_callback)
+    p.parse(pbfFile)
+
+    osmap.calculateWalkDistances(stopNodes)
+    walkshed = osmap.generateWalkShed(distance, {'distance': distance, 'mode': mode})
+    
+    import json
+    with open(outFile, 'w') as f:
+        json.dump(walkshed, f)
+    
 def addRouteStops(route, stopNodes, stops):
     # add 
     for trip in route['trips']:
@@ -160,35 +171,42 @@ def addRouteStops(route, stopNodes, stops):
             else:
                 stopNodes.append(Node(stop['lon'], stop['lat']))
 
-# instantiate map and parser and start parsing
-osmap = Map()
-p = OSMParser(concurrency=2, ways_callback=osmap.ways_callback, coords_callback=osmap.nodes_callback)
-p.parse('waterloo.osm.pbf')
-
-stops, headings = readCSV('gtfs/stops.txt', 'stop_id')
-
-import json
-with open('sample.json', 'r') as file:
-    routes = json.load(file)
+def main():
+    import argparse
     
-stopNodes = []
-for route in routes:
-    if route['id'] == 'LRT' or route['id'] == 'aBRT':
-        addRouteStops(route, stopNodes, stops)
-
-osmap.calculateWalkDistances(stopNodes)
-features = {"type": "FeatureCollection", "features": []}
-rt400 = osmap.generateWalkShed(400, {'distance': 400, 'mode': 'rapid'})
-rt800 = osmap.generateWalkShed(800, {'distance': 800, 'mode': 'rapid'})
-
-stopNodes = []
-for route in routes:
-    if route['id'] != 'LRT' and route['id'] != 'aBRT':
-        addRouteStops(route, stopNodes, stops)
-osmap.calculateWalkDistances(stopNodes)
-features['features'].append(osmap.generateWalkShed(400, {'distance': 400, 'mode': 'express'}))
-
-features['features'].append(rt800)
-features['features'].append(rt400)
-
-print 'features = %s;' % features
+    parser = argparse.ArgumentParser(description='Generate new GTFS rows based on estimates of future service.')
+    parser.add_argument('-j', '--json', dest='jsonFile', required=True,
+                       help='json file containing future transit service information')
+    parser.add_argument('-g', '--gtfs', dest='gtfsDir', required=True,
+                       help='directory containing GTFS of existing service')
+    parser.add_argument('-p', '--pbf', dest='pbfFile', required=True,
+                       help='OSM map file')
+    parser.add_argument('-o', '--output', dest='outFile', required=True,
+                       help='file where geoJSON data is to be output')
+    parser.add_argument('-d', '--distance', dest='distance', default=400, type=float,
+                       help='walkable distance from transit stations')
+    parser.add_argument('-m', '--mode', dest='mode', default='bus', 
+                       help='mode of service')
+    parser.add_argument('-c', dest='concurrent', default=2, type=int,
+                       help='number of processors to use when importing map')
+    parser.add_argument('ids', nargs="*", default=[],
+                       help='id of route in json file to include')
+    args = parser.parse_args()
+    
+    import os.path
+    from readCSV import readCSV
+    stops, headings = readCSV(os.path.join(args.gtfsDir, 'stops.txt'), 'stop_id')
+    
+    import json
+    with open(args.jsonFile, 'r') as file:
+        routes = json.load(file)
+        
+    stopNodes = []
+    for route in routes:
+        if len(args.ids) == 0 or route['id'] in args.ids:
+            addRouteStops(route, stopNodes, stops)
+    
+    processShed(args.pbfFile, args.outFile, args.distance, args.mode, args.concurrent, stopNodes)
+        
+if __name__ == "__main__":
+    main()
