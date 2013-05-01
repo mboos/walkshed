@@ -14,3 +14,8 @@ Generates a geoJSON file containing a walkshed of transit stops.
   - `MODE`        transit mode for annotating geoJSON
   - `CONCURRENT`  number of processors to use in importing PBF file (default: 2)
   - `ID`          route ids to filter for inclusion
+
+## Requirements ##
+The python packages imposm and pygraph.
+
+    pip install python-graph-core imposm
