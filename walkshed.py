@@ -57,6 +57,7 @@ class Map(object):
     
     def calculateWalkDistances(self, stops):
         self._clearDistances()
+        fillerNodes = 0
         
         gr = graph()
         gr.add_nodes(self.nodes.keys())
@@ -69,6 +70,11 @@ class Map(object):
                         node in self.nodes and not gr.has_edge((lastNode, node))):
                     gr.add_edge((lastNode, node), self.nodes[lastNode].distanceTo(self.nodes[node]))
                 lastNode = node
+        
+        def frange(x, y, jump):
+            while x < y:
+              yield x
+              x += jump
         
         #Add nodes from stops
         for stop in stops:
@@ -88,7 +94,29 @@ class Map(object):
                         nearest = key
             # ensure the nearest node is not missed
             if nearestDist > 10:
-                gr.add_edge((stop, nearest), nearestDist)
+                #gr.add_edge((stop, nearest), nearestDist)
+                nearestNode = self.nodes[nearest]
+                for mrR in gr.neighbors(nearest):
+                    if mrR not in self.nodes:
+                        continue
+                    mrRogers = self.nodes[mrR]
+                    ndist = nearestNode.distanceTo(mrRogers)
+                    lastNode = nearest
+                    for factor in frange(5.0/ndist, 1, 5.0/ndist):
+                        fillerNodes -= 1
+                        newNode = Node(nearestNode.lon + factor *
+                                                       (mrRogers.lon - nearestNode.lon),
+                                                       nearestNode.lat + factor *
+                                                       (mrRogers.lat - nearestNode.lat))
+                        gr.add_node(fillerNodes)
+                        self.nodes[fillerNodes] = newNode
+                        if stop.distanceTo(newNode) <= 10:
+                            gr.add_edge((stop, fillerNodes), stop.distanceTo(newNode))
+                        gr.add_edge((lastNode, fillerNodes), 5)
+                        lastNode = fillerNodes
+                    if not gr.has_edge((lastNode, mrR)):
+                        gr.add_edge((lastNode, mrR), ndist % 5)
+                
             
             # this graph libary may be overkill (i.e. we should probably stop Djikstra's algorithm
             # after some distance) but it beats reinventing the wheel
@@ -174,7 +202,7 @@ def addRouteStops(route, stopNodes, stops):
 def main():
     import argparse
     
-    parser = argparse.ArgumentParser(description='Generate new GTFS rows based on estimates of future service.')
+    parser = argparse.ArgumentParser(description='Generate geoJSON of selected transit route walkshed.')
     parser.add_argument('-j', '--json', dest='jsonFile', required=True,
                        help='json file containing future transit service information')
     parser.add_argument('-g', '--gtfs', dest='gtfsDir', required=True,
@@ -189,7 +217,7 @@ def main():
                        help='mode of service')
     parser.add_argument('-c', dest='concurrent', default=2, type=int,
                        help='number of processors to use when importing map')
-    parser.add_argument('ids', nargs="*", default=[],
+    parser.add_argument('ids', nargs="*", default=[], metavar='ID',
                        help='id of route in json file to include')
     args = parser.parse_args()
     
