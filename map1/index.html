@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Waterloo Region Rapid Transit Walksheds</title>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+      <!--[if lte IE 8]>
+          <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+      <![endif]-->
+      
+      <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+      
+      <script  src="http://code.jquery.com/jquery-1.9.1.min.js">
+      </script>
+      <script src="http://d3js.org/topojson.v1.min.js"></script>
+      <script src="reduced.js"></script>
+      <style>
+        html, body, #map-container, #map {
+            height: 100%;
+            margin:0;
+        }
+	.info {
+	    padding: 6px 8px;
+	    font: 14px/16px Arial, Helvetica, sans-serif;
+	    background: white;
+	    background: rgba(255,255,255,0.8);
+	    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	    border-radius: 5px;
+	}
+	.info h4 {
+	    margin: 0 0 5px;
+	    color: #777;
+	}
+	.legend {
+	    line-height: 18px;
+	    color: #555;
+	}
+	.legend i {
+	    width: 18px;
+	    height: 18px;
+	    float: left;
+	    margin-right: 8px;
+	    opacity: 0.7;
+	}
+      </style>
+      <script>
+
+function styleShed(feature) {
+    if (feature.properties.mode == 'rapid' && feature.properties.distance > 400) {
+       return {
+         color: '#f80',
+         opacity: 0.3
+      };
+    } else if (feature.properties.mode == 'rapid' && feature.properties.distance <= 400) {
+       return {
+         color: '#f00',
+         opacity: 0.4
+      };
+    } else if (feature.properties.mode == 'express') {
+      return {
+        color: '#00f',
+        opacity: 0.3
+      };
+    }
+    return  {
+    };
+}
+        
+        $(document).ready(function(){
+          var map = L.map('map', {
+	    center: [43.452763, -80.484453],
+	    zoom: 13,
+	    maxBounds: [[43.2615,-80.8698],[43.7,-80.161]]});
+          
+          L.tileLayer('http://maps.tritag.ca/bike/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap contributors, ODbL</a>',
+	      minZoom: 12
+          }).addTo(map);
+	  
+	  sheds = topojson.feature(features, features.objects.feature);
+	  L.geoJson(sheds, {style: styleShed}).addTo(map);
+          
+	  L.control.scale().addTo(map);
+	  
+	  var legend = L.control({position: 'bottomright'});
+
+	  legend.onAdd = function (map) {
+	  
+	      var div = L.DomUtil.create('div', 'info legend');
+	      
+	      div.innerHTML += '<i style="background: #f00"></i> Rapid Transit 0&ndash;400 m <br/>';
+	      div.innerHTML += '<i style="background: #f80"></i> Rapid Transit 400&ndash;800 m <br/>';
+	      div.innerHTML += '<i style="background: #00f"></i> Express Bus 0&ndash;400 m';
+	  
+	      return div;
+	  };
+	  
+	  legend.addTo(map);
+          
+        });
+      </script>
+    </head>
+    <body>
+      <div id="map-container">
+	<div id="map"></div>
+      </div>
+    </body>
+  </html>
