@@ -1,6 +1,6 @@
 # Walkshed #
 
-Generates a geoJSON file containing a walkshed of transit stops.
+Generates a geoJSON file containing a walkshed of transit stops. See [example](http://real.uwaterloo.ca/~mboos/?p=1174)
 
     usage: walkshed.py [-h] -j JSONFILE -g GTFSDIR -p PBFFILE -o OUTFILE
                         [-d DISTANCE] [-m MODE] [-c CONCURRENT]
